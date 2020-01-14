@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class 10 - exercise 01</title>
+    <style>
+        div#area{
+            font-size: 15pt;
+            font-family: fantasy;
+            background-color: darkolivegreen;
+            color: darksalmon;
+            width: 250px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "area" >
+        Interact with my web page!
+    </div>
+
+    <script>
+     var area= window.document.getElementById('area')   
+      area.addEventListener('click', clicar)
+      area.addEventListener('mouseenter', comeIn)
+      area.addEventListener('mouseout', exit)
+
+    function clicar() {
+        area.innerText = 'Cliked!'
+        area.style.backgroundColor ='red'
+    }
+    function comeIn() {
+        area.innerText = 'Came In!'
+    }
+    function exit() {
+        area.innerText = 'Exited!'
+    }
+    </script>
+</body>
+</html>

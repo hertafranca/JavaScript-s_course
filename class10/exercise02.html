@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>class 10 exercise 02</title>
+    <style>
+        body {
+            background-color: navajowhite;
+            color: navy;
+            font-family: BlinkMacSystemFont;
+            font-size: 15pt;
+        }
+        input {
+            font-family: fantasy;
+            width: 80px;
+        }
+        div#res{
+            margin-top: 10px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>ADDING THE VALUES!</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type= "button" value="flux" onclick="flux()">
+    <div id = "res" >Result</div>
+    <script>
+        function flux() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var add= n1 + n2
+        res.innerHTML = `The flux between ${n1} and ${n2} is equal the <strong> ${add} </strong>`
+        }
+    </script>
+
+</body>
+</html>
