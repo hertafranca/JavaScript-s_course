@@ -64,4 +64,5 @@ ex:
  <div  id="msg1">Do you like DOM? </div>
  var d= window.document.querySelector('div#msg1')
  d.style.color= 'yellow'
+ 
  */
